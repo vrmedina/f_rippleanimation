@@ -1,8 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:rippleanimation/ripple_animation.dart';
-import 'package:rippleanimation/splash_screen.dart';
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -12,7 +10,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
      theme: ThemeData.dark(),
 
-      home: Splash(),
+      home: RipplesAnimation(onPressed: (){},child: 
+        ElevatedButton(
+            onPressed: () {},
+            child: const Text('x'),
+          )
+        ,),
     );
   }
 }
